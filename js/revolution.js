@@ -11,7 +11,7 @@
         jsFileLocation: "../vendors/revolution/js/",
         sliderLayout: "fullscreen",
         dottedOverlay: "on",
-        delay: 9000,
+        delay: 5000,
         navigation: {
           keyboardNavigation: "off",
           keyboard_direction: "horizontal",
@@ -24,29 +24,27 @@
             swipe_direction: "horizontal",
             drag_block_vertical: false
           },
-          // arrows: {
-          //   style: "",
-          //   enable: true,
-          //   hide_onmobile: true,
-          //   hide_onleave: true,
-          //   hide_delay: 200,
-          //   hide_delay_mobile: 1200,
-          //   hide_under: 0,
-          //   hide_over: 9999,
-          //   tmp: '',
-          //   left: {
-          //     h_align: "left",
-          //     v_align: "center",
-          //     h_offset: 50,
-          //     v_offset: 0,
-          //   },
-          //   right: {
-          //     h_align: "right",
-          //     v_align: "center",
-          //     h_offset: 50,
-          //     v_offset: 0
-          //   }
-          // }
+          arrows: {
+            style: "", // You can specify a style like 'uranus', 'ares', etc. or leave blank for default
+            enable: true,
+            hide_onmobile: true,
+            hide_onleave: true,
+            hide_delay: 200,
+            hide_delay_mobile: 1200,
+            tmp: '', // This is usually for custom arrow markup, can be left empty
+            left: {
+                h_align: "left",
+                v_align: "center",
+                h_offset: 20, // Adjusted slightly from 50 to be closer to edge
+                v_offset: 0
+            },
+            right: {
+                h_align: "right",
+                v_align: "center",
+                h_offset: 20, // Adjusted slightly from 50 to be closer to edge
+                v_offset: 0
+            }
+        }
         },
         responsiveLevels: [1170, 1024, 778, 480],
         gridwidth: [1170, 1024, 778, 480],
@@ -61,8 +59,8 @@
         },
         shadow: 0,
         spinner: "spinner2",
-        stopLoop: "on",
-        stopAfterLoops: 0,
+        stopLoop: "off",
+        // stopAfterLoops: 0,
         shuffle: "off",
         autoHeight: "off",
         fullScreenOffsetContainer: "",
